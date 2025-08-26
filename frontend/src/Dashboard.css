@@ -1,0 +1,183 @@
+/* Dashboard Layout */
+.dashboard {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    }
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #111c28, #283440); /* Subtle gradient for depth */
+    color: #ecf0f1; /* Light text for contrast */
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+    border-bottom: 1px solid #7f8c8d;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+    background-color: #1f466f; /* Modern teal for hover and active states */
+    color: #ffffff;
+}
+
+/* Main Content Area */
+.content {
+    display: flex;
+    padding: 20px;
+    margin-left: 430px;
+    scroll-behavior: smooth;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+/* Search Input */
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    z-index:-1;
+}
+
+/* Buttons */
+/*button {
+    padding: 12px;
+    background-color: #033452;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}*/
+
+
+
+/* Tables */
+/* Table Container */
+.table-container {
+    width: 100%; /* Matches the content width */
+    max-height: 70vh; /* Prevents the table from exceeding 70% of the viewport height */
+    overflow-y: auto; /* Enables vertical scrolling if content exceeds the height */
+    margin-top: 20px; /* Spacing from other elements */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+
+    border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Light highlight for rows on hover */
+}
+
+/* Action Buttons */
+.action-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color:#16a085
+}
+
+.approve-button {
+    background-color: #2ecc71; /* Bright green for approval */
+    color: white;
+}
+
+.approve-button:hover {
+    background-color: #27ae60;
+}
+
+.reject-button {
+    background-color: #e74c3c; /* Bright red for rejection */
+    color: white;
+}
+
+.reject-button:hover {
+    background-color: #c0392b;
+}
+
+
+
+.logo {
+    height: 40px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* Dropdown Styling */
+select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #16a085;
+    outline: none;
+}

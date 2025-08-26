@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0C67A0;
+}
+.container{
+  display:flex; /*align content in flexible way*/
+  justify-content:center; /*  centers the elements horizontally within the container.*/
+  align-items:center; /*  centers the child elements vertically within the container.*/
+  height:100vh;
+  /*height: 100vh; -The height of the element will be 100% of the viewport's height ,not depend on the height of a parent element*/ 
+  width:100%;
+
+}
+
+/*helps distinguish the form from the surrounding content,*/
+.form-container{
+  margin-top: 50px;
+  background-color: white;
+  padding:20px; /* space inside the container b/w content and edges*/
+  border-radius: 10px; /*rounds the corners of the form container*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*adds a shadow around the form container*/
+  /* 0 horizontal shadow ,Vertical shadow of 4px */
+  /*color of black (rgb(0, 0, 0)) with 10% opacity (0.1)*/
+  width:300px;
+}
+
+
+.buttons button{
+width: 50%;
+padding: 10px;
+background-color: #f3f3f3;
+cursor: auto;
+font-size:medium;
+border: 1px solid #ddd;
+border-radius: 10px ;
+
+}
+.buttons .active{
+  background-color: #4548d4;
+  color: white;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form h2 {
+  margin-bottom: 20px;
+}
+.form input, .form select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.form button,button{
+  padding:10px;
+  background-color:#033452;
+  color:white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form a {
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.form p {
+  text-align: center;
+}
+
+.navbar {
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  height: 35px;
+  width: 70px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 5px; /* Adds space between the buttons */
+  margin-right: 5px;
+}
+
+.navbar button {
+  margin-top: 1px;
+  border: 1px solid #484242;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #4b90d6;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #000000;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 60px; /* Adjust to account for navbar height */
+  font-weight: 1000;
+}
+H3{
+  font-style: italic;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin-left:39px;
+}
+/* Search bar container styling */
+.search-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Search input wrapper with icon */
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Search input styling */
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 15px; /* Padding adjusted for icon */
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: all 0.3s ease;
+  margin-top: 50px;
+}
+
+/* Icon inside the search input */
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Focus effect */
+.search-input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+}
+
+/* Hover effect */
+.search-input:hover {
+  border-color: #007bff;
+}
+
+/* Container for the buttons */
+.landing-buttons {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  margin-top: 20px; 
+  margin-left: 40px; 
+}
+
+/* Styling for the buttons */
+.landing-buttons button {
+  padding: 15px 30px; /* Makes the buttons bigger */
+  font-size: 18px;    
+  background-color: #034170; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 10px; /* Adds space between buttons */
+  transition: background-color 0.3s ease;
+}
+
+.landing-buttons button:hover {
+  background-color: #01294a; 
+}
+

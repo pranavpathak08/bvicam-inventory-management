@@ -1,0 +1,105 @@
+  /* Main Container Styling */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Allows scrolling if content exceeds viewport */
+    width: 100%;
+    overflow-y: auto; /* Enables scrolling */
+  }
+  
+  /* Form Container Styling */
+  .form-container {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 90%;
+  }
+  
+  /* Common Form Layout */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #033452;
+    text-align: center;
+    font:bold;
+    text-transform: uppercase; 
+  }
+  
+  /* Input Fields Styling */
+  .form input,
+  .form select {
+    width: 100%; /* Ensures fields take up the full width of the parent container */
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .form input:focus,
+  .form select:focus {
+    border-color: #034170;
+    background-color: white;
+    outline: none;
+    box-shadow: 0 6px 12px rgba(0, 52, 112, 0.3);
+  }
+  
+  /* Button Styling */
+  .form button {
+    padding: 12px;
+    background-color: #033452;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #01294a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sign Up and Login Links */
+  .form p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .form p a {
+    color: #034170;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .form p a:hover {
+    color: #01294a;
+  }
+  
+  /* Dropdown Styling */
+  .form select {
+    appearance: none; /* Removes default browser styles for dropdowns */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='gray' d='M10 12l-5-5h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+    padding-right: 30px;
+  }
+  

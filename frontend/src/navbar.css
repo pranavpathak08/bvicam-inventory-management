@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button {
+    background-color: #eff0f4;
+    border-radius: 4px;
+    color: #1f466f;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.navbar button:hover {
+    background-color: #89a7c7;
+    color: #ffffff;
+}
+
+.login-button, .home-button {
+    padding: 8px 16px;
+    background-color: #31688d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
